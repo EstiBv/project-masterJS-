@@ -6,6 +6,17 @@
     <title>Projects JS</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -29,6 +40,23 @@
           role="search"
         />
       </header>
+      <!-- Slider -->
+      <div class="slider">
+        <div class="galery">
+          <div>
+            <img
+              src="./images/0-1.jpg"
+              title="pink mechanical stair in the sky"
+            />
+          </div>
+          <div>
+            <img src="./images/0-3.jpg" title="yellow steam" />
+          </div>
+          <div>
+            <img src="./images/0-2.jpg" title="black and white noria" />
+          </div>
+        </div>
+      </div>
       <!-- Content -->
       <main id="content">
         <div class="posts" role="contentinfo">
@@ -46,7 +74,7 @@
             <a href="#" class="btnMore">Leer más</a>
           </article>
         </div>
-        <!-- Slider -->
+        <!-- Aside -->
         <aside class="sidebar" role="complementary">
           <article class="about">
             <h6><span>¿Who i am?</span></h6>
@@ -57,8 +85,9 @@
               blanco caballo negroorl exercitation ex llevame al sircoo.
             </p>
           </article>
+          <!-- Form-Login -->
           <section class="login">
-            <h6>Login</h6>
+            <h6><span>Login</span></h6>
             <form action="" class="form">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" />

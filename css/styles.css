@@ -10,15 +10,18 @@
 }
 
 :root {
+  /* color */
   --ligth-color: #ffffff;
   --shadow-light-color: #cdcbcb;
   --primary-color: #688592;
   --shadow-primary-color: #4f646e;
   --secondary--color: #ece9e6;
+  /* font */
+  --intial-font: Helvetica, sans-serif;
 }
 
 body {
-  background-image: url("../images/0.jpg");
+  background-image: url("../images/0-2.jpg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -37,7 +40,7 @@ body {
 
 /* Header */
 .logo {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
   font-size: xx-small;
   letter-spacing: 2px;
   background-color: var(--primary-color);
@@ -56,7 +59,7 @@ body {
   float: none;
   clear: both;
   width: 100%;
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
   background-color: var(--secondary--color);
   text-transform: uppercase;
 }
@@ -86,7 +89,7 @@ body {
 .posts {
   width: 71%;
   float: left;
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
 }
 .post {
   padding: 5px;
@@ -110,15 +113,14 @@ body {
   color: var(--ligth-color);
   border-radius: 0.2em;
   text-decoration: none;
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
   font-size: small;
 }
 
 .sidebar {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
   width: 25%;
   float: right;
-  /* background: url("../images/water.png") repeat-x; */
 }
 
 .sidebar h6 {
@@ -143,6 +145,9 @@ body {
 }
 
 /* Login */
+.form label {
+  font-size: small;
+}
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="email"] {
@@ -161,18 +166,28 @@ body {
   color: var(--ligth-color);
   border-radius: 0.2em;
   border-style: none;
-  font-family: Helvetica, sans-serif;
-  font-size: small;
+  font-family: var(--intial-font);
+  font-size: x-small;
   cursor: pointer;
+}
+.form h6 {
+  background: var(--ligth-color);
+  padding: 1.5px;
 }
 
 /* footer */
 .footer {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--intial-font);
   font-size: small;
   color: var(--ligth-color);
   padding: 20px 0px 20px 0px;
   text-align: center;
+}
+
+/* Slider */
+.bx-wrapper,
+.bx-viewport {
+  height: 200px !important;
 }
 /* mediaqueries */
 @media all and (min-width: 540px) {
@@ -197,6 +212,9 @@ body {
   .post .date {
     font-size: small;
   }
+  .form label {
+    font-size: normal;
+  }
 }
 @media all and (min-width: 1200px) {
   .menuNav__listContainer {
@@ -207,5 +225,8 @@ body {
   }
   .post .date {
     font-size: normal;
+  }
+  .form label {
+    font-size: medium;
   }
 }
