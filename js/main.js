@@ -1,7 +1,12 @@
 $(document).ready(function () {
   $(".galery").bxSlider({
     mode: "fade",
-    captions: true,
+    captions: false,
     slideWidth: 1200,
+    responsive: true,
+    adaptiveHeight: true,
+    touchEnabled: true,
+    ticker: false,
+    slideMargin: 0,
   });
 });

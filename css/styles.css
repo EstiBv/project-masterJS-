@@ -187,7 +187,10 @@ body {
 /* Slider */
 .bx-wrapper,
 .bx-viewport {
-  height: 200px !important;
+  border-radius: 0.2em;
+  justify-content: center;
+  -ms-scroll-snap-type: none;
+  scroll-snap-type: none;
 }
 /* mediaqueries */
 @media all and (min-width: 540px) {
