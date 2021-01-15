@@ -11,7 +11,7 @@
 
 :root {
   --ligth-color: #ffffff;
-  --shadow-light-color: #cccaca;
+  --shadow-light-color: #cdcbcb;
   --primary-color: #688592;
   --shadow-primary-color: #4f646e;
   --secondary--color: #ece9e6;
@@ -44,7 +44,7 @@ body {
   border-radius: 0.2em;
   color: var(--ligth-color);
   text-align: center;
-  width: 75%;
+  width: 70%;
   height: auto;
   float: left;
   margin-bottom: 20px;
@@ -82,8 +82,9 @@ body {
 }
 
 /* Post - Articles */
+
 .posts {
-  width: 60%;
+  width: 71%;
   float: left;
   font-family: Helvetica, sans-serif;
 }
@@ -111,6 +112,58 @@ body {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   font-size: small;
+}
+
+.sidebar {
+  font-family: Helvetica, sans-serif;
+  width: 25%;
+  float: right;
+  /* background: url("../images/water.png") repeat-x; */
+}
+
+.sidebar h6 {
+  margin: 40px 0px 17px 0px;
+  text-align: center;
+  line-height: 5px;
+  color: var(--primary-color);
+  background-image: url("../images/bx.svg");
+  background-size: contain;
+  background-image: repeat;
+}
+.sidebar h6 span {
+  background: var(--ligth-color);
+  padding: 1.5px;
+}
+.sidebar img {
+  width: 100%;
+}
+.sidebar p {
+  font-size: small;
+  text-align: justify;
+}
+
+/* Login */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+  padding: 5px;
+  border-radius: 0.2em;
+  border-style: none;
+  width: 80%;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+}
+.form input[type="submit"] {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
+  border-radius: 0.2em;
+  border-style: none;
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+  cursor: pointer;
 }
 /* mediaqueries */
 @media all and (min-width: 540px) {
