@@ -70,4 +70,17 @@ $(document).ready(function () {
   pinkTheme.click(function () {
     themeSheet.attr("href", "css/pink.css");
   });
+
+  // Scroll Go Up
+  const selectGoUp = $(".up");
+  selectGoUp.click(function (ev) {
+    ev.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
 });
