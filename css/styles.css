@@ -93,6 +93,7 @@ body {
 }
 .post {
   padding: 5px;
+  margin-bottom: 20px;
 }
 .post h3 {
   font-size: x-large;
