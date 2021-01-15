@@ -165,6 +165,15 @@ body {
   font-size: small;
   cursor: pointer;
 }
+
+/* footer */
+.footer {
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+  color: var(--ligth-color);
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
 /* mediaqueries */
 @media all and (min-width: 540px) {
   .menuNav__listContainer {
