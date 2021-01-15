@@ -1,0 +1,41 @@
+:root {
+  /* color */
+  --ligth-color: #ffffff;
+  --shadow-light-color: #cecece;
+  --primary-color: #3d3d3d;
+  --shadow-primary-color: #797979;
+  --secondary--color: #ebebeb;
+  /* font */
+  --intial-font: Helvetica, sans-serif;
+}
+/* Header */
+.logo {
+  background-color: var(--primary-color);
+}
+/* Body */
+body {
+  background-image: url("../images/0-2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.menuNav {
+  background-color: var(--secondary--color);
+}
+.menuNav__listContainer li a:hover {
+  background-color: var(--primary-color);
+}
+/* Post - Articles */
+.btnMore {
+  background-color: var(--primary-color);
+}
+.sidebar h6 span {
+  background: var(--ligth-color);
+}
+/* Login */
+.form input[type="submit"] {
+  background-color: var(--primary-color);
+}
+.form h6 {
+  background: var(--ligth-color);
+}

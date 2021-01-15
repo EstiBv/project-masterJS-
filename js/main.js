@@ -39,7 +39,7 @@ $(document).ready(function () {
     },
   ];
 
-  posts.forEach((item, index) => {
+  posts.forEach((item) => {
     let post = `<article class="post">
     <h3>${item.title}</h3>
     <span class="date">${item.date}</span>
@@ -51,5 +51,23 @@ $(document).ready(function () {
     const postsArticles = $(".posts");
     postsArticles.append(post);
     console.log(posts);
+  });
+
+  // Theme Selector
+  const blackWhiteTheme = $("#toBw");
+  const blueTheme = $("#toBlue");
+  const pinkTheme = $("#toPink");
+  const themeSheet = $("#theme");
+
+  blackWhiteTheme.click(function () {
+    themeSheet.attr("href", "css/bw.css");
+  });
+
+  blueTheme.click(function () {
+    themeSheet.attr("href", "css/blue.css");
+  });
+
+  pinkTheme.click(function () {
+    themeSheet.attr("href", "css/pink.css");
   });
 });

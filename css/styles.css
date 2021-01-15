@@ -37,13 +37,44 @@ body {
   -webkit-filter: drop-shadow(5px 5px 10px var(--shadow-light-color));
   filter: drop-shadow(5px 5px 10px var(--shadow-light-color));
 }
-
+/* SeletorThemes */
+.selectorTheme {
+  position: fixed;
+  top: 40%;
+  background: rgba(51, 51, 51, 0.2);
+  width: 50px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.toBw,
+.toBlue,
+.toPink {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 4px auto;
+  -webkit-filter: drop-shadow(1px 1px 2px #000000);
+  filter: drop-shadow(1px 1px 2px #000000);
+}
+.toBw {
+  background-color: #3d3d3d;
+}
+.toBlue {
+  background-color: #11596b;
+}
+.toPink {
+  background-color: #6e4f67;
+}
 /* Header */
 .logo {
   font-family: var(--intial-font);
   font-size: xx-small;
   letter-spacing: 2px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border-radius: 0.2em;
   color: var(--ligth-color);
   text-align: center;
@@ -60,8 +91,9 @@ body {
   clear: both;
   width: 100%;
   font-family: var(--intial-font);
-  background-color: var(--secondary--color);
+  /* background-color: var(--secondary--color); */
   text-transform: uppercase;
+  border-radius: 0.2em;
 }
 .menuNav__listContainer {
   line-height: 150%;
@@ -80,7 +112,7 @@ body {
 .menuNav__listContainer li a:hover {
   border-radius: 0.2em;
   padding: 2px 5px 2px 5px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: var(--secondary--color);
 }
 
@@ -110,7 +142,7 @@ body {
 }
 .btnMore {
   padding: 10px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: var(--ligth-color);
   border-radius: 0.2em;
   text-decoration: none;
@@ -122,6 +154,7 @@ body {
   font-family: var(--intial-font);
   width: 25%;
   float: right;
+  border-radius: 0.2em;
 }
 
 .sidebar h6 {
@@ -134,11 +167,12 @@ body {
   background-image: repeat;
 }
 .sidebar h6 span {
-  background: var(--ligth-color);
+  /* background: var(--ligth-color); */
   padding: 1.5px;
 }
 .sidebar img {
   width: 100%;
+  border-radius: 0.2em;
 }
 .sidebar p {
   font-size: small;
@@ -158,12 +192,12 @@ body {
   width: 80%;
   margin-bottom: 1em;
   margin-top: 0.5em;
-  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
-  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-light-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-light-color));
 }
 .form input[type="submit"] {
   padding: 10px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: var(--ligth-color);
   border-radius: 0.2em;
   border-style: none;
@@ -172,7 +206,7 @@ body {
   cursor: pointer;
 }
 .form h6 {
-  background: var(--ligth-color);
+  /* background: var(--ligth-color); */
   padding: 1.5px;
 }
 
