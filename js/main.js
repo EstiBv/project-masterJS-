@@ -46,11 +46,9 @@ $(document).ready(function () {
     <p>${item.content}</p>
     <a href="#" class="btnMore">Read more</a>
   </article>`;
-    console.log(posts);
 
     const postsArticles = $(".posts");
     postsArticles.append(post);
-    console.log(posts);
   });
 
   // Theme Selector
@@ -58,7 +56,6 @@ $(document).ready(function () {
   const blueTheme = $("#toBlue");
   const pinkTheme = $("#toPink");
   const themeSheet = $("#theme");
-  const toChoseTheme = $(".choseTheme");
 
   blackWhiteTheme.click(function () {
     themeSheet.attr("href", "css/bw.css");
@@ -72,9 +69,6 @@ $(document).ready(function () {
     themeSheet.attr("href", "css/pink.css");
   });
 
-  // Tooltip() for Themes
-  toChoseTheme.tootip();
-
   // Scroll Go Up
   const selectGoUp = $(".up");
   selectGoUp.click(function (ev) {
@@ -87,4 +81,32 @@ $(document).ready(function () {
     );
     return false;
   });
+
+  // Login fake
+  const buttonSendDataLogin = $("#enter");
+  const inputsForm = $(".inputName");
+  console.log(inputsForm);
+
+  buttonSendDataLogin.click(function () {
+    let inputNameUser = inputsForm.val();
+    localStorage.setItem("inputNameUser", inputNameUser);
+
+    console.log(inputNameUser);
+  });
+
+  let userSavedName = localStorage.getItem("inputNameUser");
+
+  if (userSavedName !== null && userSavedName !== "undefined") {
+    const textWhoIamParagraph = $(".aboutText");
+    textWhoIamParagraph.html(
+      "<h6><span> Welcome, " + userSavedName + "</span></h6>"
+    );
+    textWhoIamParagraph.append('<a href="#" class="logOut">Log out </a>');
+    $("#login").hide();
+
+    $(".logOut").click(function () {
+      localStorage.clear();
+      location.reload();
+    });
+  }
 });

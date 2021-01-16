@@ -41,7 +41,6 @@ body {
 .selectorTheme {
   position: fixed;
   top: 40%;
-  /* background: rgba(51, 51, 51, 0.2); */
   width: 50px;
   height: 100px;
   display: flex;
@@ -74,7 +73,6 @@ body {
   font-family: var(--intial-font);
   font-size: xx-small;
   letter-spacing: 2px;
-  /* background-color: var(--primary-color); */
   border-radius: 0.2em;
   color: var(--ligth-color);
   text-align: center;
@@ -91,7 +89,6 @@ body {
   clear: both;
   width: 100%;
   font-family: var(--intial-font);
-  /* background-color: var(--secondary--color); */
   text-transform: uppercase;
   border-radius: 0.2em;
 }
@@ -112,7 +109,6 @@ body {
 .menuNav__listContainer li a:hover {
   border-radius: 0.2em;
   padding: 2px 5px 2px 5px;
-  /* background-color: var(--primary-color); */
   color: var(--secondary--color);
 }
 
@@ -142,7 +138,6 @@ body {
 }
 .btnMore {
   padding: 10px;
-  /* background-color: var(--primary-color); */
   color: var(--ligth-color);
   border-radius: 0.2em;
   text-decoration: none;
@@ -167,7 +162,6 @@ body {
   background-image: repeat;
 }
 .sidebar h6 span {
-  /* background: var(--ligth-color); */
   padding: 1.5px;
 }
 .sidebar img {
@@ -197,16 +191,14 @@ body {
 }
 .form input[type="submit"] {
   padding: 10px;
-  /* background-color: var(--primary-color); */
   color: var(--ligth-color);
   border-radius: 0.2em;
   border-style: none;
   font-family: var(--intial-font);
-  font-size: x-small;
+  font-size: small;
   cursor: pointer;
 }
 .form h6 {
-  /* background: var(--ligth-color); */
   padding: 1.5px;
 }
 

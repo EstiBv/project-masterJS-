@@ -27,8 +27,8 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <section class="selectorTheme">
+    <!-- Selector theme styles -->
+    <section class="selectorTheme" role="status style">
       <div
         id="toBw"
         class="toBw choseTheme"
@@ -45,6 +45,7 @@
         title="to select theme pink"
       ></div>
     </section>
+    <!-- Header -->
     <section id="global" aria-label="global-body" role="main">
       <header>
         <div class="logo" aria-label="logo-label"><h1>Projects Js</h1></div>
@@ -89,25 +90,30 @@
         </div>
         <!-- Aside -->
         <aside class="sidebar" role="complementary">
-          <article class="about">
+          <article class="about" id="about">
             <h6><span>¿Who i am?</span></h6>
             <img src="./images/person.jpg" alt="person image" />
-            <p>
+            <p class="aboutText">
               Dolore cillum pupita apetecan de la pradera a wan no te digo trigo
               por no llamarte Rodrigor la caidita dolor amatomaa esse. Caballo
               blanco caballo negroorl exercitation ex llevame al sircoo.
             </p>
           </article>
           <!-- Form-Login -->
-          <section class="login">
+          <section class="login" id="login">
             <h6><span>Login</span></h6>
             <form action="" class="form">
               <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" class="inputName" />
               <label for="email">Email</label>
-              <input type="text" name="name" id="email" />
+              <input type="text" name="name" id="email" class="inputEmail" />
               <label for="name">Password</label>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="inputPassword"
+              />
               <input type="submit" name="enter" id="enter" value="Enter" />
             </form>
           </section>
