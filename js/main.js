@@ -85,7 +85,6 @@ $(document).ready(function () {
   // Login User fake
   const buttonSendDataLogin = $("#enter");
   const inputsForm = $(".inputName");
-  console.log(inputsForm);
 
   buttonSendDataLogin.click(function () {
     let inputNameUser = inputsForm.val();
@@ -118,4 +117,14 @@ $(document).ready(function () {
     const watch = moment().format("h:mm:ss");
     watchContainer.html(watch);
   }, 1000);
+
+  // Validation Form
+  const inputFormDataAge = $("#date");
+  inputFormDataAge.datepicker({
+    dateFormat: "dd-mm-yy",
+  });
+  $.validate({
+    lang: "en",
+    errorMessagePosition: "top",
+  });
 });

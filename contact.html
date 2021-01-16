@@ -21,8 +21,7 @@
       type="text/javascript"
       src="./js/jquery-ui-1.12.1/jquery-ui.min.js"
     ></script>
-    <!-- Plugin validacion -->
-
+    <!-- Plugin validation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <!-- Slider -->
@@ -101,27 +100,65 @@
       <h2 class="">Contact me</h2>
       <main id="content">
         <!-- Loaded form -->
-        <form action="" class="form">
+        <form action="" method="POST" class="form">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" class="inputName" />
+          <input
+            type="text"
+            name="name"
+            id="nameContact"
+            class="inputName"
+            data-validation="alphanumeric"
+          />
 
-          <label for="surName">surName</label>
-          <input type="text" name="name" id="surName" class="inputSurName" />
+          <label for="surName">Surname</label>
+          <input
+            type="text"
+            name="surName"
+            id="surNameContact"
+            class="inputSurName"
+            data-validation="alphanumeric"
+          />
+          <label for="age">Age</label>
+          <input
+            type="text"
+            name="date"
+            id="date"
+            class="inputAge"
+            data-validation="date"
+            data-validation-format="dd-mm-yyyy"
+          />
 
           <label for="phone">Phone</label>
-          <input type="number" name="name" id="phone" class="inputPhone" />
+          <input
+            type="number"
+            name="name"
+            id="phone"
+            class="inputPhone"
+            data-validation="number"
+          />
 
           <label for="email">Email</label>
-          <input type="email" name="name" id="email" class="inputEmail" />
+          <input
+            type="email"
+            name="name"
+            id="emailContact"
+            class="inputEmail"
+            data-validation="email"
+          />
 
           <label for="howKnowMe">How did you know me?</label>
-          <select name="" class="inputHowKnowMe" type="howKnowMe">
+          <select
+            name=""
+            class="inputHowKnowMe"
+            type="howKnowMe"
+            data-validation="required"
+          >
             <option value="Blog">Blog</option>
             <option value="Networks">Networks</option>
             <option value="Friends">Friends</option>
           </select>
 
-          <input type="submit" name="enter" id="enter" value="Enter" />
+          <input type="submit" name="enter" id="enterContact" value="Enter" />
         </form>
         <!-- Aside -->
         <aside class="sidebar" role="complementary">

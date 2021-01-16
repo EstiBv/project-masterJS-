@@ -199,7 +199,16 @@ body {
 .form h6 {
   padding: 1.5px;
 }
-
+.form-error {
+  margin-top: 20px;
+  font-family: var(--intial-font);
+  float: left;
+  text-align: justify;
+  line-height: 1.2em;
+  color: #8f2828;
+  font-size: small;
+  font-weight: bold;
+}
 /* footer */
 .footer {
   font-family: var(--intial-font);
