@@ -60,3 +60,8 @@ body {
   color: var(--secondary--color);
   font-weight: 700;
 }
+/* WATCH */
+.watch {
+  color: var(--shadow-primary-color);
+  background-color: var(--secondary--color);
+}

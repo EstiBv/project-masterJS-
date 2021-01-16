@@ -111,4 +111,11 @@ $(document).ready(function () {
   // About Accordion
   const accordionContainer = $(".accordion");
   accordionContainer.accordion();
+
+  // Watch
+  setInterval(function () {
+    const watchContainer = $(".watch");
+    const watch = moment().format("h:mm:ss");
+    watchContainer.html(watch);
+  }, 1000);
 });

@@ -2,8 +2,8 @@
   /* color */
   --ligth-color: #ffffff;
   --shadow-light-color: #f7d4d4;
-  --primary-color: #6e4f67;
-  --shadow-primary-color: #c0899b;
+  --primary-color: #412f3c;
+  --shadow-primary-color: #976a79;
   --secondary--color: #fdf6fd;
   /* font */
   --intial-font: Helvetica, sans-serif;
@@ -57,4 +57,10 @@ body {
   transition: ease-in-out 500ms;
   color: var(--secondary--color);
   font-weight: 700;
+}
+
+/* WATCH */
+.watch {
+  color: var(--shadow-primary-color);
+  background-color: var(--secondary--color);
 }

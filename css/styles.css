@@ -4,19 +4,8 @@
   box-sizing: border-box;
   list-style: none;
 }
-.clearFix {
-  float: none;
-  clear: both;
-}
 
 :root {
-  /* color */
-  --ligth-color: #ffffff;
-  --shadow-light-color: #cdcbcb;
-  --primary-color: #688592;
-  --shadow-primary-color: #4f646e;
-  --secondary--color: #ece9e6;
-  /* font */
   --intial-font: Helvetica, sans-serif;
 }
 
@@ -24,6 +13,10 @@ body {
   background-image: url("../images/0-2.jpg");
   background-position: center;
   background-attachment: fixed;
+}
+.clearFix {
+  float: none;
+  clear: both;
 }
 
 /* Section-Body */
@@ -66,7 +59,7 @@ body {
   background-color: #11596b;
 }
 .toPink {
-  background-color: #6e4f67;
+  background-color: #976a79;
 }
 /* Header */
 .logo {
@@ -234,6 +227,8 @@ body {
 .titleAboutMe {
   font-family: var(--intial-font);
   font-size: x-large;
+  margin-bottom: 20px;
+  display: inline;
 }
 /* accordion */
 .boxAccordion {
@@ -247,6 +242,23 @@ body {
 .ui-accordion .ui-accordion-content {
   padding: 2em 2.2em;
   text-align: justify;
+}
+
+/* WATCH */
+/* .watchContainer {
+  display: inline;
+} */
+.watch {
+  float: left;
+  margin-top: 40px;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: var(--intial-font);
+  width: 50%;
+  display: inline;
+  border-radius: 0.2em;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
 }
 
 /* mediaqueries */
