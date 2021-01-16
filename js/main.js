@@ -41,7 +41,7 @@ $(document).ready(function () {
 
   posts.forEach((item) => {
     let post = `<article class="post">
-    <h3>${item.title}</h3>
+    <h2 class="titlePosts">${item.title}</h2>
     <span class="date">${item.date}</span>
     <p>${item.content}</p>
     <a href="#" class="btnMore">Read more</a>
@@ -82,7 +82,7 @@ $(document).ready(function () {
     return false;
   });
 
-  // Login fake
+  // Login User fake
   const buttonSendDataLogin = $("#enter");
   const inputsForm = $(".inputName");
   console.log(inputsForm);
@@ -90,8 +90,6 @@ $(document).ready(function () {
   buttonSendDataLogin.click(function () {
     let inputNameUser = inputsForm.val();
     localStorage.setItem("inputNameUser", inputNameUser);
-
-    console.log(inputNameUser);
   });
 
   let userSavedName = localStorage.getItem("inputNameUser");
@@ -109,4 +107,8 @@ $(document).ready(function () {
       location.reload();
     });
   }
+
+  // About Accordion
+  const accordionContainer = $(".accordion");
+  accordionContainer.accordion();
 });

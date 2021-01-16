@@ -112,6 +112,7 @@ body {
   color: var(--secondary--color);
 }
 
+/* HOME */
 /* Post - Articles */
 
 .posts {
@@ -227,6 +228,25 @@ body {
   justify-content: center;
   -ms-scroll-snap-type: none;
   scroll-snap-type: none;
+}
+
+/* ABOUT */
+.titleAboutMe {
+  font-family: var(--intial-font);
+  font-size: x-large;
+}
+/* accordion */
+.boxAccordion {
+  width: 71%;
+  float: left;
+  margin-top: 60px;
+}
+.ui-accordion .ui-accordion-header {
+  font-family: var(--intial-font);
+}
+.ui-accordion .ui-accordion-content {
+  padding: 2em 2.2em;
+  text-align: justify;
 }
 
 /* mediaqueries */

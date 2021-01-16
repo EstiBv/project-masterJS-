@@ -42,3 +42,19 @@ body {
 .form h6 {
   background: var(--ligth-color);
 }
+/* ABOUT  */
+.titleAboutMe {
+  color: var(--primary-color);
+}
+/* accordion */
+
+.ui-accordion .ui-accordion-header {
+  background-color: var(--secondary--color);
+  color: var(--primary-color);
+}
+.ui-accordion .ui-accordion-header:hover {
+  background-color: var(--primary-color);
+  transition: ease-in-out 500ms;
+  color: var(--secondary--color);
+  font-weight: 700;
+}
