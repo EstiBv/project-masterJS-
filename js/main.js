@@ -58,6 +58,7 @@ $(document).ready(function () {
   const blueTheme = $("#toBlue");
   const pinkTheme = $("#toPink");
   const themeSheet = $("#theme");
+  const toChoseTheme = $(".choseTheme");
 
   blackWhiteTheme.click(function () {
     themeSheet.attr("href", "css/bw.css");
@@ -70,6 +71,9 @@ $(document).ready(function () {
   pinkTheme.click(function () {
     themeSheet.attr("href", "css/pink.css");
   });
+
+  // Tooltip() for Themes
+  toChoseTheme.tootip();
 
   // Scroll Go Up
   const selectGoUp = $(".up");

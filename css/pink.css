@@ -8,6 +8,10 @@
   /* font */
   --intial-font: Helvetica, sans-serif;
 }
+/* SeletorThemes */
+.selectorTheme {
+  background-color: var(--shadow-primary-color);
+}
 /* Header */
 .logo {
   background-color: var(--primary-color);
