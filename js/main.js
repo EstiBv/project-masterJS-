@@ -123,8 +123,11 @@ $(document).ready(function () {
   inputFormDataAge.datepicker({
     dateFormat: "dd-mm-yy",
   });
-  $.validate({
-    lang: "en",
-    errorMessagePosition: "top",
-  });
+
+  if (window.location.href.indexOf("conctact") > -1) {
+    $.validate({
+      lang: "en",
+      errorMessagePosition: "top",
+    });
+  }
 });

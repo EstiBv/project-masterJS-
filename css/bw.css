@@ -9,17 +9,17 @@
   --intial-font: Helvetica, sans-serif;
 }
 /* SeletorThemes */
-.selectorTheme {
-  background-color: var(--shadow-primary-color);
-}
 
 /* Header */
 .logo {
   background-color: var(--primary-color);
 }
+.searcher {
+  border: 2px solid var(--primary-color);
+}
 /* Body */
 body {
-  background-image: url("../images/0-2.jpg");
+  background-image: url("../images/d.jpg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -30,7 +30,16 @@ body {
 .menuNav__listContainer li a:hover {
   background-color: var(--primary-color);
 }
+.menuNav__listContainer li a {
+  color: var(--shadow-primary-color);
+}
 /* Post - Articles */
+.titlePosts {
+  color: var(--primary-color);
+}
+.post .date {
+  color: var(--shadow-light-color);
+}
 .btnMore {
   background-color: var(--primary-color);
 }
@@ -38,14 +47,30 @@ body {
   background: var(--ligth-color);
 }
 /* Login */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="howKnowMe"],
+.inputHowKnowMe {
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+}
 .form input[type="submit"] {
   background-color: var(--primary-color);
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
 }
 .form h6 {
   background: var(--ligth-color);
 }
 /* ABOUT  */
 .titleAboutMe {
+  color: var(--primary-color);
+}
+.titleContact {
+  font-family: var(--intial-font);
   color: var(--primary-color);
 }
 /* accordion */

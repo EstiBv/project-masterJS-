@@ -1,34 +1,43 @@
 :root {
   /* color */
   --ligth-color: #ffffff;
-  --shadow-light-color: #f7d4d4;
-  --primary-color: #412f3c;
-  --shadow-primary-color: #976a79;
-  --secondary--color: #fdf6fd;
+  --shadow-light-color: #c58fb0b7;
+  --primary-color: #3f1b31fb;
+  --shadow-primary-color: #726b6e;
+  --secondary--color: #ebdee7b0;
   /* font */
   --intial-font: Helvetica, sans-serif;
 }
-/* SeletorThemes */
-.selectorTheme {
-  background-color: var(--shadow-primary-color);
-}
+
 /* Header */
 .logo {
   background-color: var(--primary-color);
 }
+.searcher {
+  border: 2px solid var(--primary-color);
+}
 /* Body */
 body {
-  background-image: url("../images/0-1.jpg");
+  background-image: url("../images/a.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 .menuNav {
   background-color: var(--secondary--color);
 }
+.menuNav__listContainer li a {
+  color: var(--shadow-primary-color);
+}
 .menuNav__listContainer li a:hover {
   background-color: var(--primary-color);
 }
 /* Post - Articles */
+.titlePosts {
+  color: var(--primary-color);
+}
+.date {
+  color: var(--shadow-primary-color);
+}
 .btnMore {
   background-color: var(--primary-color);
 }
@@ -36,14 +45,30 @@ body {
   background: var(--ligth-color);
 }
 /* Login */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="howKnowMe"],
+.inputHowKnowMe {
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+}
 .form input[type="submit"] {
   background-color: var(--primary-color);
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
 }
 .form h6 {
   background: var(--ligth-color);
 }
 /* ABOUT  */
 .titleAboutMe {
+  color: var(--primary-color);
+}
+.titleContact {
+  font-family: var(--intial-font);
   color: var(--primary-color);
 }
 /* accordion */
