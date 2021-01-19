@@ -38,8 +38,8 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <section id="global" aria-label="global-body" role="main">
+    <!-- HEADER-->
+    <section id="global" aria-label="global-body" role="body">
       <header>
         <div class="containerHeader">
           <section class="containerHeader__logo" aria-label="logo-label">
@@ -107,26 +107,33 @@
       <!-- Content -->
       <main id="content">
         <!-- Loaded watch -->
-        <h2 class="titleAboutMe">Time to play</h2>
-        <section
-          class="watch watchDragabble"
-          aria-label="watch. Timing digital"
-        ></section>
-        <!-- Aside -->
+        <h2 class="content__title">Time to play</h2>
+        <section>
+          <div
+            class="watch watchDragabble"
+            aria-label="watch. Timing digital"
+          ></div>
+        </section>
+        <!-- ASIDE -->
         <aside class="sidebar" role="complementary">
-          <article class="about" id="about">
-            <h6><span>¿Who i am?</span></h6>
-            <img src="./images/person.jpg" alt="person image" />
-            <p class="aboutText">
+          <!-- About me -->
+          <article class="sidebar__article" id="about">
+            <h6 class="sidebar__article--title"><span>¿Who i am?</span></h6>
+            <img
+              src="./images/person.jpg"
+              alt="person image"
+              class="sidebar__article--img"
+            />
+            <p class="sidebar__article--text">
               Dolore cillum pupita apetecan de la pradera a wan no te digo trigo
               por no llamarte Rodrigor la caidita dolor amatomaa esse. Caballo
               blanco caballo negroorl exercitation ex llevame al sircoo.
             </p>
           </article>
-          <!-- Form-Login -->
-          <section class="login" id="login">
-            <h6><span>Login</span></h6>
-            <form action="" class="form formlogin">
+          <!-- Login -->
+          <section class="sidebar__login" id="login">
+            <h6 class="sidebar__login--title"><span>Login</span></h6>
+            <form action="" class="form formlogin sidebar__form">
               <label for="name">User</label>
               <input type="text" name="name" id="name" class="inputName" />
               <label for="email">Email</label>
@@ -145,10 +152,10 @@
         <div class="clearFix"></div>
       </main>
     </section>
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer class="footer">
       <small>Master de JavaScript - Developed by @llilles</small>
-      <a href="#" class="up">Go up</a>
+      <a href="#" class="footer__scrollUp">Go up</a>
     </footer>
   </body>
 </html>

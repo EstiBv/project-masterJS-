@@ -124,60 +124,33 @@ body {
 
 /* MAIN > HOME - Posts  */
 
-.posts {
+.contentPosts {
   width: 100%;
   float: left;
   font-family: var(--intial-font);
 }
-.post {
+.contentPosts__article {
   padding: 5px;
   margin-bottom: 20px;
 }
-.post h3 {
+.contentPosts__article--title {
   font-size: x-large;
 }
-.date {
+.contentPosts__article--date {
   font-size: x-small;
 }
-.post p {
+.contentPosts__paragrapah {
   margin: 10px 0px 30px 0px;
   line-height: 22px;
   text-align: justify;
 }
-.btnMore {
+.contentPosts__btnMore {
   padding: 10px;
   color: var(--ligth-color);
   border-radius: 0.2em;
   text-decoration: none;
   font-family: var(--intial-font);
   font-size: small;
-}
-
-.sidebar {
-  font-family: var(--intial-font);
-  width: 100%;
-  float: right;
-  border-radius: 0.2em;
-}
-
-.sidebar h6 {
-  margin: 40px 0px 17px 0px;
-  text-align: center;
-  line-height: 5px;
-  background-image: url("../images/bx.svg");
-  background-size: contain;
-  background-image: repeat;
-}
-.sidebar h6 span {
-  padding: 1.5px;
-}
-.sidebar img {
-  width: 100%;
-  border-radius: 0.2em;
-}
-.sidebar p {
-  font-size: small;
-  text-align: justify;
 }
 
 /* Slider Galery*/
@@ -191,8 +164,41 @@ body {
   scroll-snap-type: none;
 }
 
+/* ASIDE */
+.sidebar {
+  font-family: var(--intial-font);
+  width: 100%;
+  float: right;
+  border-radius: 0.2em;
+}
+
+.sidebar__article--title,
+.sidebar__login--title {
+  margin: 40px 0px 17px 0px;
+  text-align: center;
+  line-height: 5px;
+  background-image: url("../images/bx.svg");
+  background-size: contain;
+  background-image: repeat;
+}
+.sidebar__article--title span {
+  padding: 1.5px;
+}
+.sidebar__article--img {
+  width: 100%;
+  border-radius: 0.2em;
+}
+.sidebar__article--text {
+  font-size: small;
+  text-align: justify;
+}
+
 /* Form Login */
 
+.sidebar__login--title span {
+  padding: 1.5px;
+  background-color: #ffffff;
+}
 .form label {
   font-size: small;
 }
@@ -228,9 +234,6 @@ body {
   margin-top: 0.5em;
 }
 
-.form h6 {
-  padding: 1.5px;
-}
 .form-error {
   margin-top: 20px;
   font-family: var(--intial-font);
@@ -241,8 +244,8 @@ body {
   font-size: small;
   font-weight: bold;
 }
-/*  FormC ontact */
-.formContact label {
+/*  Form Contact */
+.content__contactFotm label {
   font-size: small;
   font-family: var(--intial-font);
 }
@@ -251,17 +254,17 @@ body {
 }
 
 /* ABOUT */
-.titleAboutMe {
+.content__accordionTitleSection {
   font-family: var(--intial-font);
   font-size: x-large;
   margin-bottom: 20px;
   display: inline;
 }
 /* Accordion */
-.boxAccordion {
+.content__boxAccordion {
   width: 100%;
   float: left;
-  margin-top: 60px;
+  margin-top: 35px;
 }
 .ui-accordion .ui-accordion-header {
   font-family: var(--intial-font);
@@ -287,7 +290,7 @@ body {
   cursor: pointer;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer {
   font-family: var(--intial-font);
@@ -302,8 +305,8 @@ body {
   height: 50px;
   width: 100vw;
 }
-/* Select Up Footer */
-.up {
+/* FOOTER - Scroll up */
+.footer__scrollUp {
   position: fixed;
   margin-top: 75px;
   margin-left: 20px;
@@ -373,11 +376,11 @@ body {
     font-size: small;
   }
 
-  .posts {
+  .contentPosts {
     width: 71%;
   }
 
-  .boxAccordion {
+  .content__boxAccordion {
     width: 71%;
   }
   .sidebar {
@@ -387,7 +390,7 @@ body {
   .titleAboutMe {
     float: left;
   }
-  .formlogin {
+  .sidebar__form {
     width: 100%;
     position: relative;
   }
@@ -398,7 +401,7 @@ body {
     width: 61%;
     display: inline-block;
   }
-  .post .date {
+  .contentPosts__article .contentPosts__article--date {
     font-size: x-small;
   }
   .watch {
@@ -416,7 +419,7 @@ body {
   .titleAboutMe {
     float: left;
   }
-  .post .date {
+  .contentPosts__article .contentPosts__article--date {
     font-size: small;
   }
   .form label {
@@ -425,7 +428,7 @@ body {
   .sidebar {
     width: 24%;
   }
-  .boxAccordion {
+  .content__boxAccordion {
     width: 65%;
     position: absolute;
   }
@@ -459,7 +462,7 @@ body {
   .titleAboutMe {
     float: left;
   }
-  .post .date {
+  .contentPosts__article .contentPosts__article--date {
     font-size: normal;
   }
   .form label {

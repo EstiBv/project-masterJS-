@@ -34,16 +34,16 @@
   color: var(--shadow-primary-color);
 }
 /* MAIN > HOME - Posts  */
-.titlePosts {
+.contentPosts__article--title {
   color: var(--primary-color);
 }
-.post .date {
+.contentPosts__article .contentPosts__article--date {
   color: var(--shadow-light-color);
 }
-.btnMore {
+.contentPosts__btnMore {
   background-color: var(--primary-color);
 }
-.sidebar h6 span {
+.sidebar__article--title span {
   background: var(--ligth-color);
 }
 /* Login */
@@ -62,14 +62,15 @@
   -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
   filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
 }
-.form h6 {
-  background: var(--ligth-color);
-}
-/* ABOUT  */
-.titleAboutMe {
+.sidebar__login--title,
+.sidebar__article--title {
   color: var(--primary-color);
 }
-.titleContact {
+/* ABOUT  */
+.content__accordionTitleSection {
+  color: var(--primary-color);
+}
+.content__title {
   font-family: var(--intial-font);
   color: var(--primary-color);
 }

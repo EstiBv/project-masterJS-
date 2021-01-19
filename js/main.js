@@ -40,14 +40,14 @@ $(document).ready(function () {
   ];
 
   posts.forEach((item) => {
-    let post = `<article class="post">
-    <h2 class="titlePosts">${item.title}</h2>
-    <span class="date">${item.date}</span>
-    <p>${item.content}</p>
-    <a href="#" class="btnMore">Read more</a>
+    let post = `<article class="contentPosts__article">
+    <h2 class="contentPosts__article--title">${item.title}</h2>
+    <span class="contentPosts__article--date">${item.date}</span>
+    <p class="contentPosts__paragrapah">${item.content}</p>
+    <a href="#" class="contentPosts__btnMore">Read more</a>
   </article>`;
 
-    const postsArticles = $(".posts");
+    const postsArticles = $(".contentPosts");
     postsArticles.append(post);
   });
 
@@ -108,7 +108,7 @@ $(document).ready(function () {
   }
 
   // About Accordion
-  const accordionContainer = $(".accordion");
+  const accordionContainer = $(".content__boxAccordion--accordion");
   accordionContainer.accordion();
 
   // Watch
