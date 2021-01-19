@@ -9,29 +9,31 @@
   --intial-font: Helvetica, sans-serif;
 }
 
-/* Header */
-.logo {
+/* HEADER */
+.containerHeader__logo {
   background-color: var(--primary-color);
 }
 .searcher {
   border: 2px solid var(--primary-color);
 }
-/* Body */
+
+/* BODY */
 body {
   background-image: url("../images/a.jpg");
   background-position: center;
   background-attachment: fixed;
 }
-.menuNav {
+.containerHeader__menuNav {
   background-color: var(--secondary--color);
 }
-.menuNav__listContainer li a {
+.containerHeader__menuNav--list li a {
   color: var(--shadow-primary-color);
 }
-.menuNav__listContainer li a:hover {
+.containerHeader__menuNav--list li a:hover {
   background-color: var(--primary-color);
 }
-/* Post - Articles */
+
+/* MAIN > HOME - Posts  */
 .titlePosts {
   color: var(--primary-color);
 }

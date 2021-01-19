@@ -40,15 +40,16 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <section id="global" aria-label="global-body" role="main">
+     <!-- Header -->
+     <section id="global" aria-label="global-body" role="main">
       <header>
-        <div class="containerLogoSearch">
-          <section class="logo" aria-label="logo-label">
+        <div class="containerHeader">
+          <section class="containerHeader__logo" aria-label="logo-label">
             <h1>Projects Js</h1>
           </section>
-          <div class="containerSearchTheme">
+          <section class="containerHeader__selectorTheme">
             <!-- Selector theme styles -->
-            <section class="selectorTheme" role="status style">
+            <div class="selectorTheme" role="status style">
               <div
                 id="toBw"
                 class="toBw choseTheme"
@@ -64,7 +65,7 @@
                 class="toPink choseTheme"
                 title="to select theme pink"
               ></div>
-            </section>
+            </div>
             <input
               type="text"
               name="text"
@@ -73,10 +74,10 @@
               placeholder="search"
               role="search"
             />
-          </div>
+          </section>
         </div>
-        <nav class="menuNav">
-          <ul id="menu" class="menuNav__listContainer" role="treeitem">
+        <nav class="containerHeader__menuNav">
+          <ul id="menu" class="containerHeader__menuNav--list" role="treeitem">
             <li><a href="index.html">Home</a></li>
             <li><a href="watch.html">Watch</a></li>
             <li><a href="about.html">About</a></li>
@@ -85,8 +86,12 @@
         </nav>
       </header>
       <!-- Slider -->
-      <div class="slider">
-        <div class="galery">
+      <section
+        class="slider"
+        role="img"
+        aria-label="Three images, the first a white cassette, the second an antenna with the sky background and the third, a Roman sculpture with a pink background"
+      >
+        <div class="slider__galery">
           <div>
             <img
               src="./images/d.jpg"
@@ -100,7 +105,7 @@
             <img src="./images/a.jpg" title="black and white noria" />
           </div>
         </div>
-      </div>
+      </section>
       <!-- Content -->
       <main id="content">
         <h2 class="titleContact">Contact me</h2>

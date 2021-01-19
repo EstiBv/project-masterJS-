@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Slider
-  $(".galery").bxSlider({
+  $(".slider__galery").bxSlider({
     mode: "fade",
     captions: false,
     slideWidth: 1200,
@@ -113,10 +113,11 @@ $(document).ready(function () {
 
   // Watch
   setInterval(function () {
-    const watchContainer = $(".watch");
+    let watchContainer = $(".watch");
     const watch = moment().format("h:mm:ss");
     watchContainer.html(watch);
   }, 1000);
+  let watch = $(".watchDragabble").draggable({ addClasses: false });
 
   // Validation Form
   const inputFormDataAge = $("#date");
