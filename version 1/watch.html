@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects JS</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link id="theme" rel="stylesheet" type="text/css" href="./css/bw.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- jQuery Ui -->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"
+    />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+    <script
+      type="text/javascript"
+      src="./js/jquery-ui-1.12.1/jquery-ui.min.js"
+    ></script>
+
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Moment Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER-->
+    <section id="global" aria-label="global-body" role="body">
+      <header>
+        <div class="containerHeader">
+          <section class="containerHeader__logo" aria-label="logo-label">
+            <h1>Projects Js</h1>
+          </section>
+          <section class="containerHeader__selectorTheme">
+            <!-- Selector theme styles -->
+            <div class="selectorTheme" role="status style">
+              <div
+                id="toBw"
+                class="toBw choseTheme"
+                title="to select theme black and white"
+              ></div>
+              <div
+                id="toBlue"
+                class="toBlue choseTheme"
+                title="to select theme blue"
+              ></div>
+              <div
+                id="toPink"
+                class="toPink choseTheme"
+                title="to select theme pink"
+              ></div>
+            </div>
+            <input
+              type="text"
+              name="text"
+              id="seach"
+              class="searcher"
+              placeholder="search"
+              role="search"
+            />
+          </section>
+        </div>
+        <nav class="containerHeader__menuNav">
+          <ul id="menu" class="containerHeader__menuNav--list" role="treeitem">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Slider -->
+      <section
+        class="slider"
+        role="img"
+        aria-label="Three images, the first a white cassette, the second an antenna with the sky background and the third, a Roman sculpture with a pink background"
+      >
+        <div class="slider__galery">
+          <div>
+            <img
+              src="./images/d.jpg"
+              title="pink mechanical stair in the sky"
+            />
+          </div>
+          <div>
+            <img src="./images/b.jpeg" title="yellow steam" />
+          </div>
+          <div>
+            <img src="./images/a.jpeg" title="black and white noria" />
+          </div>
+        </div>
+      </section>
+      <!-- Content -->
+      <main id="content">
+        <!-- Loaded watch -->
+        <h2 class="content__title">Time to play</h2>
+        <section>
+          <div
+            class="watch watchDragabble"
+            aria-label="watch. Timing digital"
+          ></div>
+        </section>
+        <!-- ASIDE -->
+        <aside class="sidebar" role="complementary">
+          <!-- About me -->
+          <article class="sidebar__article" id="about">
+            <h6 class="sidebar__article--title"><span>¿Who i am?</span></h6>
+            <img
+              src="./images/person.jpg"
+              alt="person image"
+              class="sidebar__article--img"
+            />
+            <p class="sidebar__article--text">
+              Dolore cillum pupita apetecan de la pradera a wan no te digo trigo
+              por no llamarte Rodrigor la caidita dolor amatomaa esse. Caballo
+              blanco caballo negroorl exercitation ex llevame al sircoo.
+            </p>
+          </article>
+          <!-- Login -->
+          <section class="sidebar__login" id="login">
+            <h6 class="sidebar__login--title"><span>Login</span></h6>
+            <form action="" class="form formlogin sidebar__form">
+              <label for="name">User</label>
+              <input type="text" name="name" id="name" class="inputName" />
+              <label for="email">Email</label>
+              <input type="text" name="name" id="email" class="inputEmail" />
+              <label for="name">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="inputPassword"
+              />
+              <input type="submit" name="enter" id="enter" value="Enter" />
+            </form>
+          </section>
+        </aside>
+        <div class="clearFix"></div>
+      </main>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <small>Master de JavaScript - Developed by @llilles</small>
+      <a href="#" class="footer__scrollUp">Go up</a>
+    </footer>
+  </body>
+</html>

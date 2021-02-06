@@ -1,0 +1,94 @@
+:root {
+  /* color */
+  --ligth-color: #ffffff;
+  --shadow-light-color: #c58fb0b7;
+  --primary-color: #3f1b31fb;
+  --shadow-primary-color: #726b6e;
+  --secondary--color: #ebdee7b0;
+  /* font */
+  --intial-font: Helvetica, sans-serif;
+}
+
+/* HEADER */
+.containerHeader__logo {
+  background-color: var(--primary-color);
+}
+.searcher {
+  border: 2px solid var(--primary-color);
+}
+
+/* BODY */
+body {
+  background-image: url("../images/b.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+}
+.containerHeader__menuNav {
+  background-color: var(--secondary--color);
+}
+.containerHeader__menuNav--list li a {
+  color: var(--shadow-primary-color);
+}
+.containerHeader__menuNav--list li a:hover {
+  background-color: var(--primary-color);
+}
+
+/* MAIN > HOME - Posts  */
+.contentPosts__article--title {
+  color: var(--primary-color);
+}
+.contentPosts__article--date {
+  color: var(--shadow-primary-color);
+}
+.contentPosts__btnMore {
+  background-color: var(--primary-color);
+}
+.sidebar__article--title span {
+  background: var(--ligth-color);
+}
+/* Login */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="howKnowMe"],
+.inputHowKnowMe {
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+}
+.form input[type="submit"] {
+  background-color: var(--primary-color);
+  -webkit-filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+  filter: drop-shadow(1px 1px 2px var(--shadow-primary-color));
+}
+.sidebar__login--title,
+.sidebar__article--title {
+  color: var(--primary-color);
+}
+/* ABOUT  */
+.content__accordionTitleSection {
+  color: var(--primary-color);
+}
+.content__title {
+  font-family: var(--intial-font);
+  color: var(--primary-color);
+}
+/* accordion */
+
+.ui-accordion .ui-accordion-header {
+  background-color: var(--secondary--color);
+  color: var(--primary-color);
+}
+.ui-accordion .ui-accordion-header:hover {
+  background-color: var(--primary-color);
+  transition: ease-in-out 500ms;
+  color: var(--secondary--color);
+  font-weight: 700;
+}
+
+/* WATCH */
+.watch {
+  color: var(--shadow-primary-color);
+  background-color: var(--secondary--color);
+}

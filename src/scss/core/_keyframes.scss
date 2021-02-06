@@ -1,0 +1,128 @@
+/* Mediaqueries */
+@media all and (min-width: 560px) {
+  #content {
+    flex-direction: row;
+  }
+
+  .containerHeader__menuNav--list {
+    font-size: small;
+    margin-top: 5px;
+  }
+  .containerHeader__logo {
+    font-size: small;
+  }
+
+  .contentPosts {
+    width: 71%;
+  }
+
+  .content__boxAccordion {
+    width: 71%;
+  }
+  .sidebar {
+    width: 24%;
+    position: relative;
+    // bottom: 220px;
+  }
+
+  .titleAboutMe {
+    float: left;
+  }
+  .sidebar__form {
+    width: 100%;
+    position: relative;
+  }
+
+  form {
+    /* position: absolute; */
+    margin-top: 45px;
+    width: 100%;
+    display: inline-block;
+  }
+  .contentPosts__article .contentPosts__article--date {
+    font-size: x-small;
+  }
+  .watch {
+    float: left;
+    width: 60%;
+  }
+}
+@media all and (min-width: 649px) {
+  .containerHeader__menuNav--list {
+    font-size: normal;
+  }
+  .containerHeader__logo {
+    font-size: normal;
+  }
+  .titleAboutMe {
+    float: left;
+  }
+  .contentPosts__article .contentPosts__article--date {
+    font-size: small;
+  }
+  .form label {
+    font-size: normal;
+  }
+  .sidebar {
+    width: 24%;
+    position: relative;
+    bottom: 25px;
+    // bottom: 200px;
+    // bottom: 15px;
+  }
+  .content__boxAccordion {
+    width: 65%;
+    // position: absolute;
+  }
+  .watch {
+    float: left;
+    width: 71%;
+  }
+}
+
+@media all and (min-width: 920px) {
+  .watch {
+    float: left;
+  }
+  .toBw,
+  .toBlue,
+  .toPink {
+    width: 28px;
+    height: 8px;
+  }
+  .selectorTheme {
+    margin-left: 25px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .containerHeader__menuNav--list {
+    font-size: medium;
+  }
+  .containerHeader__logo {
+    font-size: medium;
+  }
+  .titleAboutMe {
+    float: left;
+  }
+  .contentPosts__article .contentPosts__article--date {
+    font-size: normal;
+  }
+  .form label {
+    font-size: medium;
+  }
+  .sidebar {
+    width: 24%;
+    position: relative;
+    bottom: 25px;
+    margin-left: 20px;
+  }
+  .watch {
+    float: left;
+    width: 75%;
+  }
+  #content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

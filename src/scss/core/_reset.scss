@@ -1,0 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* BODY */
+body {
+  background-position: center;
+  background-attachment: fixed;
+}
+.clearFix {
+  float: none;
+  clear: both;
+}
+
+#global {
+  width: 65%;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--ligth-color);
+  border-radius: 0.2em;
+  -webkit-filter: drop-shadow(5px 5px 10px var(--shadow-light-color));
+  filter: drop-shadow(5px 5px 10px var(--shadow-light-color));
+}
