@@ -57,8 +57,8 @@ Compuesta por cuatro secciones.
 ⛳️ He de seguir mejorando (hay mucho chorizaco) a la hora de migrar el proyecto para integrarlo en el starter kit (ofrecido por Adalab, donde he desarrollado otros proyectos) he tenido complicaciones que espero pronto reslver y presentar el proyectos refactorizado y mas legible. Por ello, y como me dijeron una vez:
 **seguiré fallando, pero fallando mejor**
 
-![FireShot Capture 178 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107117982-4ce24f80-687e-11eb-8e2b-7df1c5f3062d.png)
+![FireShot Capture 192 - Projects JS - estibv github io](https://user-images.githubusercontent.com/70572595/107121522-3a264580-6893-11eb-826c-4457ce1e0be6.png)
 
-![FireShot Capture 181 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107118066-dc87fe00-687e-11eb-8d80-716bf461213d.png)
+![FireShot Capture 220 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107121599-98532880-6893-11eb-989a-b4fb23fd6766.png)
 
-![FireShot Capture 184 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107118110-3be60e00-687f-11eb-98d6-3113f39045a5.png)
+![FireShot Capture 228 - Projects JS - estibv github io](https://user-images.githubusercontent.com/70572595/107121644-e49e6880-6893-11eb-993a-679ca28135b6.png)
