@@ -42,9 +42,7 @@ Compuesta por cuatro secciones.
 
 8️⃣ Inlcuída interactividad en botones y desplegables, complementarios al diseño dado, para mejorar la **experiencia del usuario** (interactividad en botones, ampliación de recursos en sección de "reloj")
 
-9️⃣ Desarrollado en el starter kit ofrecido por Adalab para mejorar la compilación del proyecto y su organización (mediante componentes). Incluído compilación de estilos **Lenguaje SaSS**
-
-🔟 Mayor garantía de **accesibilidad** web en el desarrollo de la estructura HTML5
+9️⃣ Implemento de **accesibilidad** web en el desarrollo de la estructura HTML5
 
 ---
 
@@ -56,7 +54,11 @@ Compuesta por cuatro secciones.
 
 🌦 Me he sorprendido con el ritmo de trabajo, pues al plantear mejoras pensé que sería un coste temporal mas elevado y aunquq así ha sido (tardé dos dias mas de lo previsto), el la organización mediante trello ha facilitado las labores de mejora y de rediseño (al inicialmente dado).
 
-⛳️ Soy consciente de que puedo seguir mejorando y como me dijeron una vez:
-**he de seguir fallando, pero fallando mejor**
+⛳️ He de seguir mejorando (hay mucho chorizaco) a la hora de migrar el proyecto para integrarlo en el starter kit (ofrecido por Adalab, donde he desarrollado otros proyectos) he tenido complicaciones que espero pronto reslver y presentar el proyectos refactorizado y mas legible. Por ello, y como me dijeron una vez:
+**seguiré fallando, pero fallando mejor**
 
-_(Adjunar img web)_
+![FireShot Capture 178 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107117982-4ce24f80-687e-11eb-8e2b-7df1c5f3062d.png)
+
+![FireShot Capture 181 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107118066-dc87fe00-687e-11eb-8d80-716bf461213d.png)
+
+![FireShot Capture 184 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107118110-3be60e00-687f-11eb-98d6-3113f39045a5.png)
