@@ -22,7 +22,7 @@ body {
   background-image: url("../images/b.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   background-attachment: fixed;
 }
 .containerHeader__menuNav {
@@ -93,4 +93,8 @@ body {
 .watch {
   color: var(--shadow-primary-color);
   background-color: var(--secondary--color);
+}
+/* CANVAS */
+.canvas {
+  background-color: var(--shadow-primary-color);
 }

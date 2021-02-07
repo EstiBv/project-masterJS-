@@ -131,4 +131,88 @@ $(document).ready(function () {
       errorMessagePosition: "top",
     });
   }
+
+  // CANVAS
+  let miCanvas = document.querySelector("#pizarra");
+  // evitar error en los otras pag.
+  if (miCanvas !== null && miCanvas !== "undefined") {
+    let lineas = [];
+    let correccionX = 0;
+    let correccionY = 0;
+    let pintarLinea = false;
+
+    // Marca el nuevo punto
+    let nuevaPosicionX = 0;
+    let nuevaPosicionY = 0;
+
+    //Correcion X e Y cogen el valor de la posición de la linea respecto a la ventana de visualización con getBoundingClientRect
+    let posicion = miCanvas.getBoundingClientRect();
+    correccionX = posicion.x;
+    correccionY = posicion.y;
+
+    // px igual que en css
+    miCanvas.width = 300;
+    miCanvas.height = 300;
+
+    // * Funcion que empieza a dibujar la linea
+    // */
+    function empezarDibujo() {
+      pintarLinea = true;
+      lineas.push([]);
+    }
+
+    // * Funcion que guarda la posicion de la nueva línea
+    // */
+    function guardarLinea() {
+      lineas[lineas.length - 1].push({
+        x: nuevaPosicionX,
+        y: nuevaPosicionY,
+      });
+    }
+    /* Funcion dibuja la linea*/
+
+    function dibujarLinea(event) {
+      event.preventDefault();
+
+      if (pintarLinea) {
+        //  parametro de contexto de render en dos dimensiones soportado por todos los navegadores, sobre el que se aplican los estilos.
+        let ctx = miCanvas.getContext("2d");
+        // Estilos de linea
+        ctx.lineJoin = ctx.lineCap = "round";
+        ctx.lineWidth = 5;
+        // Color de la linea
+        ctx.strokeStyle = "#fff";
+        // Marca el nuevo punto
+        if (event.changedTouches === undefined) {
+          // Versión ratón
+          nuevaPosicionX = event.layerX;
+          nuevaPosicionY = event.layerY;
+        }
+
+        // Guarda la linea
+        guardarLinea();
+        // Redibuja todas las lineas guardadas, vacía y vuelve a pintar
+        ctx.beginPath();
+        lineas.forEach(function (segmento) {
+          ctx.moveTo(segmento[0].x, segmento[0].y);
+          segmento.forEach(function (punto, i) {
+            ctx.lineTo(punto.x, punto.y);
+          });
+        });
+        ctx.stroke();
+      }
+    }
+    // * Funcion que deja de dibujar la linea
+    // */
+    function pararDibujar() {
+      pintarLinea = false;
+      guardarLinea();
+    }
+    // Eventos raton
+    miCanvas.addEventListener("mousedown", empezarDibujo, false);
+    miCanvas.addEventListener("mousemove", dibujarLinea, false);
+    miCanvas.addEventListener("mouseup", pararDibujar, false);
+  } else {
+    console.log("no section canvas");
+  }
 });

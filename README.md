@@ -67,4 +67,4 @@ _tema rosado_
 
 _tema violeta_
 
-![FireShot Capture 228 - Projects JS - estibv github io](https://user-images.githubusercontent.com/70572595/107121644-e49e6880-6893-11eb-993a-679ca28135b6.png)
+![FireShot Capture 233 - Projects JS - 127 0 0 1](https://user-images.githubusercontent.com/70572595/107144599-91ccbb80-693c-11eb-9dc6-90113029e018.png)

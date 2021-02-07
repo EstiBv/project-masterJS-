@@ -34,6 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
 
+  </script>
     <!-- Script -->
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -107,12 +108,16 @@
       <!-- Content -->
       <main id="content">
         <!-- Loaded watch -->
-        <h2 class="content__title">Time to play</h2>
+        <h2 class="content__title">Time to draw</h2>
         <section>
           <div
             class="watch watchDragabble"
             aria-label="watch. Timing digital"
           ></div>
+          <!-- Canvas -->
+          <section class="canvas">
+            <canvas id="pizarra"></canvas>
+          </section>
         </section>
         <!-- ASIDE -->
         <aside class="sidebar" role="complementary">

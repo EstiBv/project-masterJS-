@@ -93,3 +93,8 @@ body {
   color: var(--shadow-primary-color);
   background-color: var(--secondary--color);
 }
+
+/* CANVAS */
+.canvas {
+  background-color: var(--shadow-primary-color);
+}
